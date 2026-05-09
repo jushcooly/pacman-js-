@@ -21,7 +21,7 @@ To prevent the agent from playing too conservatively (e.g., hiding in a corner),
 * Applied **Graph Theory** to the maze structure.
 * By calculating an **Eulerian Trail**, the agent identifies the most efficient path to traverse every corridor, ensuring 100% map coverage with minimal backtracking.
 
-### 4. Adaptive Ghost Intelligence (New)
+### 4. Adaptive Ghost Intelligence 
 To provide a challenging environment for the RL agent, the ghosts are equipped with:
 * **BFS Pathfinding**: Ghosts use **Breadth-First Search (BFS)** to calculate the shortest path to Pac-Man in real-time, making their pursuit highly efficient.
 * **Dynamic Difficulty Scaling**: The game monitors the learning progress. As the number of episodes increases, the **movement delay of the ghosts is incrementally reduced**, forcing the RL agent to adapt to a faster and more aggressive environment.

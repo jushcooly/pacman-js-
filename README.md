@@ -28,8 +28,7 @@ To provide a challenging environment for the RL agent, the ghosts are equipped w
 * **BFS Pathfinding**: Ghosts use **Breadth-First Search (BFS)** to calculate the shortest path to Pac-Man in real-time, making their pursuit highly efficient.
 * **Dynamic Difficulty Scaling**: The game monitors the learning progress. As the number of episodes increases, the **movement delay of the ghosts is incrementally reduced**, forcing the RL agent to adapt to a faster and more aggressive environment.
 
-## Key Features
-* **Ghost Evasion**: Real-time trajectory prediction and avoidance.
+## Key Features.
 * **Dynamic Path Planning**:  switches between real mode and tutorial mode.
 
 

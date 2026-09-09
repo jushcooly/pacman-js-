@@ -14,7 +14,7 @@ This project transforms the classic Pac-Man game into a testbed for advanced **R
 
 ### 2. Behavioral Innovation: The "Hunger" Mechanic
 To prevent the agent from playing too conservatively (e.g., hiding in a corner), I implemented a **Hunger System**:
-* The reward for eating pellets dynamically increases over time.
+* f 150 steps pass without eating a pellet, a penalty begins accumulating and grows the longer the drought lasts.
 * As the "hunger" state grows, the agent is incentivized to take calculated risks to find food, effectively balancing the exploration-exploitation trade-off.
 
 ### 3. Path Optimization

@@ -17,9 +17,11 @@ To prevent the agent from playing too conservatively (e.g., hiding in a corner),
 * The reward for eating pellets dynamically increases over time.
 * As the "hunger" state grows, the agent is incentivized to take calculated risks to find food, effectively balancing the exploration-exploitation trade-off.
 
-### 3. Path Optimization: Eulerian Trail
+### 3. Path Optimization
 * Applied **Graph Theory** to the maze structure.
-* By calculating an **Eulerian Trail**, the agent identifies the most efficient path to traverse every corridor, ensuring 100% map coverage with minimal backtracking.
+* Every tile keeps a visit counter, reset whenever a pellet is eaten there.
+Re-entering an already-cleared tile costs  so backtracking gets progressively more expensive.
+
 
 ### 4. Adaptive Ghost Intelligence 
 To provide a challenging environment for the RL agent, the ghosts are equipped with:
